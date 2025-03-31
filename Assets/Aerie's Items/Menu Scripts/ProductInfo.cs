@@ -1,54 +1,67 @@
 using UnityEngine;
-using UnityEngine.UI;  // For buttons
-using TMPro; // For TextMeshPro if you want to modify text
+using UnityEngine.UI;
+using TMPro;
 
-public class ProductInfo : MonoBehaviour
+public class UIManager : MonoBehaviour
 {
-    // Reference to the OverlayInfo panel and its elements
-    public GameObject OverlayInfo;    // The overlay panel
-    public GameObject Plan;           // The Plan child (you can modify as needed)
-    public Button tryInARButton;      // Button for "Try in AR"
-    
+    // References to overlay panels
+    public GameObject OverlayInfo;   // Panel for product details
+    public GameObject OverlayRec;    // Panel for product recommendation
+
+    // Buttons
+    public Button tryInARButton;    // Button inside OverlayInfo
+    public Button searchButton;     // Button to show OverlayRec
+    public Button closeRecButton;   // Button to close OverlayRec
+    public Button closeInfoButton;  // Button to close OverlayInfo
 
     void Start()
     {
-        // Ensure OverlayInfo is hidden by default
+        // Ensure both panels are hidden initially
         OverlayInfo.SetActive(false);
+        OverlayRec.SetActive(false);
 
-        // Set up button click listener
-        tryInARButton.onClick.AddListener(OnTryInARClick);
+        // Set up button listeners
+        if (tryInARButton != null)
+            tryInARButton.onClick.AddListener(TransitionToAR);
+
+        if (searchButton != null)
+            searchButton.onClick.AddListener(ShowOverlayRec);
+
+        if (closeRecButton != null)
+            closeRecButton.onClick.AddListener(HideOverlayRec);
+
+        if (closeInfoButton != null)
+            closeInfoButton.onClick.AddListener(HideOverlayInfo);
     }
 
-    // Method to show the overlay panel with the product info
-    public void ShowOverlay(string productInfo)
+    // Show OverlayRec when search is clicked
+    public void ShowOverlayRec()
     {
-        
+        OverlayRec.SetActive(true);
+    }
 
-        // Activate the OverlayInfo panel
+    // Hide OverlayRec
+    public void HideOverlayRec()
+    {
+        OverlayRec.SetActive(false);
+    }
+
+    // Show OverlayInfo (use this when a product is selected)
+    public void ShowOverlayInfo()
+    {
         OverlayInfo.SetActive(true);
     }
 
-    // Button click method to transition to AR visualization
-    private void OnTryInARClick()
+    // Hide OverlayInfo
+    public void HideOverlayInfo()
     {
-        // Example logic for AR scene transition
-        // Assuming you have a method to handle the AR scene transition
-        TransitionToAR();
+        OverlayInfo.SetActive(false);
     }
 
-    // Method to transition to the AR scene (implement this as per your AR setup)
+    // Navigate to AR Scene
     private void TransitionToAR()
     {
-        // Example: Load AR scene or activate AR functionality here
         Debug.Log("Navigating to AR scene...");
-        // You might use SceneManager to load the AR scene:
-        // SceneManager.LoadScene("ARScene");
-    }
-
-    // You can call this method when an item is selected in the scroll view
-    // Pass the information about the product to the overlay
-    public void OnProductSelected(string productInfo)
-    {
-        ShowOverlay(productInfo);
+        // Example: SceneManager.LoadScene("ARScene");
     }
 }

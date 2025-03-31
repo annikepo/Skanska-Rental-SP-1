@@ -8,6 +8,7 @@ public class PanelManager : MonoBehaviour
     public GameObject BrowsePanel;
     public GameObject CabinPanel;
     public GameObject InformationPanel;
+    public GameObject InputPanel;
 
     // This method will hide all panels and show the desired one
     private void ShowPanel(GameObject panelToShow)
@@ -18,6 +19,7 @@ public class PanelManager : MonoBehaviour
         BrowsePanel.SetActive(false);
         CabinPanel.SetActive(false);
         InformationPanel.SetActive(false);
+        InputPanel.SetActive(false);
 
         // Show the selected panel
         panelToShow.SetActive(true);
@@ -47,9 +49,16 @@ public class PanelManager : MonoBehaviour
         ShowPanel(InformationPanel);
     }
 
-    // Called when the "Back to Login" button is clicked (you can add this as an option)
+    // Called when the "My Projects" button is clicked
+    public void OnMyProjectsButtonClicked()
+    {
+        ShowPanel(InputPanel);
+    }
+
+    // Called when the "Back to Login" button is clicked
     public void OnBackToLoginButtonClicked()
     {
         ShowPanel(LoginPanel);
     }
 }
+
