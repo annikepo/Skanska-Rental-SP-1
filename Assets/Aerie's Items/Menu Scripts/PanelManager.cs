@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class PanelManager : MonoBehaviour
 {
@@ -9,6 +10,9 @@ public class PanelManager : MonoBehaviour
     public GameObject CabinPanel;
     public GameObject InformationPanel;
     public GameObject InputPanel;
+
+    // Stack to keep track of the panel history
+    private Stack<GameObject> panelHistory = new Stack<GameObject>();
 
     // This method will hide all panels and show the desired one
     private void ShowPanel(GameObject panelToShow)
@@ -23,47 +27,58 @@ public class PanelManager : MonoBehaviour
 
         // Show the selected panel
         panelToShow.SetActive(true);
+
+        // Push the current panel onto the history stack
+        panelHistory.Push(panelToShow);
     }
 
     // Called when the "Sign In" button is clicked
     public void OnSignInButtonClicked()
     {
-        Debug.Log("Navigating to Selection Panel");
         ShowPanel(SelectionPanel);
     }
 
-    // Called when the "Browse Products" button is clicked
+    // Called when the "Browse" button is clicked
     public void OnBrowseButtonClicked()
     {
-        Debug.Log("Navigating to Browse Panel");
         ShowPanel(BrowsePanel);
     }
 
     // Called when the "Cabin" button is clicked
     public void OnCabinButtonClicked()
     {
-        Debug.Log("Navigating to Cabin Panel");
         ShowPanel(CabinPanel);
     }
 
     // Called when the "Information" button is clicked
     public void OnInformationButtonClicked()
     {
-        Debug.Log("Navigating to Information Panel");
         ShowPanel(InformationPanel);
     }
 
-    // Called when the "My Projects" button is clicked
-    public void OnMyProjectsButtonClicked()
+    // Called when the "My Project" button is clicked
+    public void OnMyProjectButtonClicked()
     {
-        Debug.Log("Navigating to Input Panel");
         ShowPanel(InputPanel);
     }
 
-    // Called when the "Back to Login" button is clicked
-    public void OnBackToLoginButtonClicked()
+    // Called when the "Back to previous panel" button is clicked
+    public void OnBackButtonClicked()
     {
-        Debug.Log("Navigating to Login Panel");
-        ShowPanel(LoginPanel);
+        if (panelHistory.Count > 1) // Check if there's more than one panel in history
+        {
+            // Pop the current panel (the one on top of the stack)
+            panelHistory.Pop();
+
+            // Get the previous panel in the history stack
+            GameObject previousPanel = panelHistory.Peek();
+
+            // Show the previous panel
+            ShowPanel(previousPanel);
+        }
+        else
+        {
+            Debug.Log("No previous panel to go back to.");
+        }
     }
 }
