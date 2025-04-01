@@ -1,14 +1,54 @@
 fileFormatVersion: 2
-guid: 15f5cdf983914e546a73f2295e44c1dc
+guid: 69829486742aa304b861702e37fbba1a
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DoorMat.004
+    second: {fileID: 2100000, guid: 25c66ccfdf866084f906e7e26e90eb17, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FloorMat.001
+    second: {fileID: 2100000, guid: 5dacda8911d73ea43abe32676a7997ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallLong2Mat.002
+    second: {fileID: 2100000, guid: 9c7a4d13ec0f808489e707df8061aba1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallLong2Mat.003
+    second: {fileID: 2100000, guid: 12930ce4c55deae4baaea64e29830660, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallLong2Mat.007
+    second: {fileID: 2100000, guid: d2ebca90e274e834ebbe0bd49fcafaae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallShortDoorInteriorMat.006
+    second: {fileID: 2100000, guid: 06279b9e04e8f4b4fa2afe2ea79afcc9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallShortDoorMat.001
+    second: {fileID: 2100000, guid: 45847c92953f8cc45819a9126a09724e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallShortSmallWindowMat
+    second: {fileID: 2100000, guid: 392777ec151ec154fb1413d59c5d8b71, type: 2}
   materials:
-    materialImportMode: 1
-    materialName: 1
+    materialImportMode: 2
+    materialName: 0
     materialSearch: 1
-    materialLocation: 0
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -50,7 +90,7 @@ ModelImporter:
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
-    bakeAxisConversion: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
     skinWeightsMode: 0
     maxBonesPerVertex: 4
@@ -69,7 +109,7 @@ ModelImporter:
     strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
-    normalImportMode: 1
+    normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0

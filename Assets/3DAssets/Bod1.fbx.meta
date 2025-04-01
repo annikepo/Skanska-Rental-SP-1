@@ -1,14 +1,49 @@
 fileFormatVersion: 2
-guid: 15f5cdf983914e546a73f2295e44c1dc
+guid: f47f001e695d2ca4691a0dd019f69047
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DoorMat.001
+    second: {fileID: 2100000, guid: 843f6a56b984a01428a82a4d5a6a9321, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DoorMat.005
+    second: {fileID: 2100000, guid: 6e2829805116c17488d61608e0bef8e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallLong2Mat.006
+    second: {fileID: 2100000, guid: 6c5a3328ed0f5534ba86b5703a3610f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallLongDoubleOpening.001
+    second: {fileID: 2100000, guid: d7ef62bdffc849c44bef74c943391c28, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallShortDoorInteriorMat.002
+    second: {fileID: 2100000, guid: fedf2296731ab054e9b3d15775438906, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallShortDoorMat.003
+    second: {fileID: 2100000, guid: 031ee81476e691b4aaadb36dd73fd381, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallShortDoubleWindowsMat.002
+    second: {fileID: 2100000, guid: e0c2580a9d9561b45a72c8d9e014b2e8, type: 2}
   materials:
-    materialImportMode: 1
-    materialName: 1
+    materialImportMode: 2
+    materialName: 0
     materialSearch: 1
-    materialLocation: 0
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -50,7 +85,7 @@ ModelImporter:
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
-    bakeAxisConversion: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
     skinWeightsMode: 0
     maxBonesPerVertex: 4
@@ -69,7 +104,7 @@ ModelImporter:
     strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
-    normalImportMode: 1
+    normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
