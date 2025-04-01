@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class PanelManager : MonoBehaviour
 {
@@ -8,6 +9,10 @@ public class PanelManager : MonoBehaviour
     public GameObject BrowsePanel;
     public GameObject CabinPanel;
     public GameObject InformationPanel;
+    public GameObject InputPanel;
+
+    // Stack to keep track of the panel history
+    private Stack<GameObject> panelHistory = new Stack<GameObject>();
 
     // This method will hide all panels and show the desired one
     private void ShowPanel(GameObject panelToShow)
@@ -18,9 +23,13 @@ public class PanelManager : MonoBehaviour
         BrowsePanel.SetActive(false);
         CabinPanel.SetActive(false);
         InformationPanel.SetActive(false);
+        InputPanel.SetActive(false);
 
         // Show the selected panel
         panelToShow.SetActive(true);
+
+        // Push the current panel onto the history stack
+        panelHistory.Push(panelToShow);
     }
 
     // Called when the "Sign In" button is clicked
@@ -47,9 +56,29 @@ public class PanelManager : MonoBehaviour
         ShowPanel(InformationPanel);
     }
 
-    // Called when the "Back to Login" button is clicked (you can add this as an option)
-    public void OnBackToLoginButtonClicked()
+    // Called when the "My Project" button is clicked
+    public void OnMyProjectButtonClicked()
     {
-        ShowPanel(LoginPanel);
+        ShowPanel(InputPanel);
+    }
+
+    // Called when the "Back to previous panel" button is clicked
+    public void OnBackButtonClicked()
+    {
+        if (panelHistory.Count > 1) // Check if there's more than one panel in history
+        {
+            // Pop the current panel (the one on top of the stack)
+            panelHistory.Pop();
+
+            // Get the previous panel in the history stack
+            GameObject previousPanel = panelHistory.Peek();
+
+            // Show the previous panel
+            ShowPanel(previousPanel);
+        }
+        else
+        {
+            Debug.Log("No previous panel to go back to.");
+        }
     }
 }
