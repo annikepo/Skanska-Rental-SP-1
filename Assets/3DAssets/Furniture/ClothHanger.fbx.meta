@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: 2a92d74f7d5d21849b76e9abe2d2ca9c
+guid: 81f353e7cf2b038419d51a5b47e5a9e7
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CloathHangerMat
+    second: {fileID: 2100000, guid: 313ad2ee7b6d52148a5c217649dff3c8, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
