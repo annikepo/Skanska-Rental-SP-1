@@ -10,6 +10,7 @@ public class PanelManager : MonoBehaviour
     public GameObject CabinPanel;
     public GameObject InformationPanel;
     public GameObject InputPanel;
+    public GameObject HintPanel; // Reference to your hint panel
 
     // Stack to keep track of the panel history
     private Stack<GameObject> panelHistory = new Stack<GameObject>();
@@ -29,7 +30,28 @@ public class PanelManager : MonoBehaviour
         panelToShow.SetActive(true);
 
         // Push the current panel onto the history stack
-        panelHistory.Push(panelToShow);
+        if (panelHistory.Count == 0 || panelHistory.Peek() != panelToShow)
+        {
+            panelHistory.Push(panelToShow);
+        }
+    }
+
+    // Method to hide the hint panel
+    private void HideHintPanel()
+    {
+        if (HintPanel != null)
+        {
+            HintPanel.SetActive(false);
+        }
+    }
+
+    // Method to show the hint panel
+    public void ShowHintPanel()
+    {
+        if (HintPanel != null)
+        {
+            HintPanel.SetActive(true); // This will make the Hint Panel visible
+        }
     }
 
     // Called when the "Sign In" button is clicked
