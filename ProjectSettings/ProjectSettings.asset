@@ -147,7 +147,6 @@ PlayerSettings:
   - {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
   - {fileID: 4800000, guid: c9f956787b1d945e7b36e0516201fc76, type: 3}
   - {fileID: 4800000, guid: 0945859e5a1034c2cb6dce53cb4fb899, type: 3}
-  - {fileID: 11400000, guid: 98aac73190cd3b34d9f5181de24316d2, type: 2}
   - {fileID: 544021829891126313, guid: bd155275b3313b5448788f49578f9590, type: 2}
   - {fileID: -7473503154044502217, guid: 999bb78f2256eba42aa220391c6620a7, type: 2}
   metroInputSource: 0
