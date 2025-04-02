@@ -26,6 +26,9 @@ public class PanelManager : MonoBehaviour
         InformationPanel.SetActive(false);
         InputPanel.SetActive(false);
 
+        // Make sure to hide the hint panel when changing panels
+        HintPanel.SetActive(false);
+
         // Show the selected panel
         panelToShow.SetActive(true);
 
@@ -41,7 +44,7 @@ public class PanelManager : MonoBehaviour
     {
         if (HintPanel != null)
         {
-            HintPanel.SetActive(false);
+            HintPanel.SetActive(false); // Make sure it's hidden
         }
     }
 
