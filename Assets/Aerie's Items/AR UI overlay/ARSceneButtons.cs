@@ -3,25 +3,17 @@ using UnityEngine.SceneManagement;
 
 public class ARSceneButtons : MonoBehaviour
 {
-    public GameObject customerServicePanel; // Assign this in the inspector
-    public static bool returnToSelection = false; // Static flag to track if returning to SelectionPanel
+    public GameObject customerServicePanel; // Assign in Inspector
 
-    // Method for the Home button
-    public void OnHomeButtonClicked()
+    // Method to go back to the SelectionPanel in the main menu scene
+    public void GoToHome()
     {
-        returnToSelection = true; // Set flag to activate SelectionPanel
-        SceneManager.LoadScene("MainMenuScene"); // Load Main Menu Scene
+        SceneManager.LoadScene("MainMenuScene"); // Replace with your actual main menu scene name
     }
 
-    // Method for the Customer Service button
-    public void OnCustomerServiceButtonClicked()
+    // Method to toggle the Customer Service panel visibility
+    public void ToggleCustomerService()
     {
-        customerServicePanel.SetActive(true); // Show the customer service info panel
-    }
-
-    // Method to close the Customer Service panel
-    public void OnCloseCustomerService()
-    {
-        customerServicePanel.SetActive(false);
+        customerServicePanel.SetActive(!customerServicePanel.activeSelf);
     }
 }
