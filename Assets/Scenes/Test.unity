@@ -543,10 +543,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -2999031308362678196, guid: 20832f1f7ca5373499d86e4033301098, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 33d9c84dbeeb5ae4186014c12a20f555, type: 2}
     - target: {fileID: 919132149155446097, guid: 20832f1f7ca5373499d86e4033301098, type: 3}
       propertyPath: m_Name
       value: CabinShell1
