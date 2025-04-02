@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1ad60d363f0b6464cb743893f57cd327
+guid: 0ea3671dd1efc0846ba3bef26f2a2e66
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,33 +7,38 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: FloorMat
-    second: {fileID: 2100000, guid: ce7f20b0af2a095488f763b8f8fa2376, type: 2}
+      name: DoorMat.002
+    second: {fileID: 2100000, guid: 0fb1af032096aea4ebc7fee822843c2f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: RoofMat
-    second: {fileID: 2100000, guid: 092a06f5ac8bf1c4f80fb550b8fe1c17, type: 2}
+      name: FloorMat.002
+    second: {fileID: 2100000, guid: ce54abd9049e8c54b85592d192296fca, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: WallLong2Mat
-    second: {fileID: 2100000, guid: 33d9c84dbeeb5ae4186014c12a20f555, type: 2}
+      name: WallLongDoubleOpening.001
+    second: {fileID: 2100000, guid: c68279b44f3f3b849869655c084b0bde, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: WallShortDoorInteriorMat
-    second: {fileID: 2100000, guid: 3df2a8e71e9b9c848b82cb84d70b2cfa, type: 2}
+      name: WallLongDoubleOpening.002
+    second: {fileID: 2100000, guid: de40318c895218d4e890351dd3028b27, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: WallShortDoorMat
-    second: {fileID: 2100000, guid: 0e8f10d58364443458e9f71c4f36f9b7, type: 2}
+      name: WallShortDoorInteriorMat.003
+    second: {fileID: 2100000, guid: 079325807b5acb74383ca0095dd4f074, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: WallShortDoubleWindowsMat
-    second: {fileID: 2100000, guid: 7c26e67097c92a44688b19d1acc8fc9c, type: 2}
+      name: WallShortDoorMat.002
+    second: {fileID: 2100000, guid: 037d1853a7ed9a249b79bf163ebe3fe5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallShortDoubleWindowsMat.003
+    second: {fileID: 2100000, guid: ebc0566c6df95b7418c81ea0eebb5c72, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
