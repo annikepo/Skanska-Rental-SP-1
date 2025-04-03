@@ -497,11 +497,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4346774051641923965, guid: 28e8b45e7389cdf489940b0bbfc37cf7, type: 3}
       propertyPath: m_Name
-      value: MenuCanvas
+      value: AR menu
       objectReference: {fileID: 0}
     - target: {fileID: 4346774051641923965, guid: 28e8b45e7389cdf489940b0bbfc37cf7, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -523,9 +523,6 @@ PrefabInstance:
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 6534462508132596696, guid: 28e8b45e7389cdf489940b0bbfc37cf7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 723902123}
-    - targetCorrespondingSourceObject: {fileID: 6534462508132596696, guid: 28e8b45e7389cdf489940b0bbfc37cf7, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1553884611}
     - targetCorrespondingSourceObject: {fileID: 6534462508132596696, guid: 28e8b45e7389cdf489940b0bbfc37cf7, type: 3}
       insertIndex: -1
@@ -533,6 +530,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6534462508132596696, guid: 28e8b45e7389cdf489940b0bbfc37cf7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 125131000}
+    - targetCorrespondingSourceObject: {fileID: 6534462508132596696, guid: 28e8b45e7389cdf489940b0bbfc37cf7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 723902123}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28e8b45e7389cdf489940b0bbfc37cf7, type: 3}
 --- !u!1 &318078429
@@ -600,7 +600,7 @@ MonoBehaviour:
 
     010-448 63 00
 
-    
+
 
 '
   m_isRightToLeft: 0
