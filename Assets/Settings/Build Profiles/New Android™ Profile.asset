@@ -22,10 +22,8 @@ MonoBehaviour:
   m_Scenes:
   - m_enabled: 1
     m_path: Assets/Scenes/Main Menu Scenes/Menu Scene.unity
-  - m_enabled: 0
-    m_path: Assets/Scenes/DisplayBrowserAR.unity
   - m_enabled: 1
-    m_path: Assets/Scenes/DisplayTemplateAR.unity
+    m_path: Assets/Scenes/DisplayBrowserAR.unity
   m_ScriptingDefines:
   - 
   - 
