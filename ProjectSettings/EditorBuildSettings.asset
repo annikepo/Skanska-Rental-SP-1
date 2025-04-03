@@ -11,9 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DisplayBrowserAR.unity
     guid: a64270758046f0d47808ebd0f77a98ca
-  - enabled: 1
-    path: Assets/Scenes/DisplayTemplateAR.unity
-    guid: c8f80ed0111cb9e48bb73383a9e83b3f
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 7ccf517f44b471b4db3935f5e97f728e, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 6e1df4e113e3b7d439312a476fa2e36f, type: 2}
