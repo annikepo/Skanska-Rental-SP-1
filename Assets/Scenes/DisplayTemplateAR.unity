@@ -390,6 +390,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6067185528594298527, guid: 7dbbcbd5c779e2e409121d43dab1b045, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e859defdc29bfee4399d98bbfe995193, type: 2}
     - target: {fileID: 919132149155446097, guid: 7dbbcbd5c779e2e409121d43dab1b045, type: 3}
       propertyPath: m_Name
       value: Fridge (2)
@@ -1110,6 +1114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ade95776aed29346bc902da178ce143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  miniatureObject: {fileID: 0}
   rotationSpeed: 45
 --- !u!1001 &484910292
 PrefabInstance:
@@ -1383,6 +1388,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6067185528594298527, guid: 7dbbcbd5c779e2e409121d43dab1b045, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e859defdc29bfee4399d98bbfe995193, type: 2}
     - target: {fileID: 919132149155446097, guid: 7dbbcbd5c779e2e409121d43dab1b045, type: 3}
       propertyPath: m_Name
       value: Fridge
@@ -2931,6 +2940,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6067185528594298527, guid: 7dbbcbd5c779e2e409121d43dab1b045, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e859defdc29bfee4399d98bbfe995193, type: 2}
     - target: {fileID: 919132149155446097, guid: 7dbbcbd5c779e2e409121d43dab1b045, type: 3}
       propertyPath: m_Name
       value: Fridge (1)
@@ -4723,7 +4736,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1904069350
 Transform:
   m_ObjectHideFlags: 0
