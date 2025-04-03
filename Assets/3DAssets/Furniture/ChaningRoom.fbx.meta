@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: 1168d93e16d52d449bcde842c062b4c5
+guid: 37f4d08359231434c991f10fb9586e1f
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ChaningRoomMat
+    second: {fileID: 2100000, guid: 533cb5b52ae93d54f97ad32d71dbfe88, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

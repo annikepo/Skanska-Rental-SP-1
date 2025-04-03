@@ -1,9 +1,44 @@
 fileFormatVersion: 2
-guid: 1168d93e16d52d449bcde842c062b4c5
+guid: f47f001e695d2ca4691a0dd019f69047
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DoorMat.001
+    second: {fileID: 2100000, guid: 843f6a56b984a01428a82a4d5a6a9321, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DoorMat.005
+    second: {fileID: 2100000, guid: 6e2829805116c17488d61608e0bef8e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallLong2Mat.006
+    second: {fileID: 2100000, guid: 6c5a3328ed0f5534ba86b5703a3610f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallLongDoubleOpening.001
+    second: {fileID: 2100000, guid: d7ef62bdffc849c44bef74c943391c28, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallShortDoorInteriorMat.002
+    second: {fileID: 2100000, guid: fedf2296731ab054e9b3d15775438906, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallShortDoorMat.003
+    second: {fileID: 2100000, guid: 031ee81476e691b4aaadb36dd73fd381, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallShortDoubleWindowsMat.002
+    second: {fileID: 2100000, guid: e0c2580a9d9561b45a72c8d9e014b2e8, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

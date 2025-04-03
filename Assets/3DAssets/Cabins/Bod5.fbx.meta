@@ -1,9 +1,54 @@
 fileFormatVersion: 2
-guid: 1168d93e16d52d449bcde842c062b4c5
+guid: ef673a9d7a8c4bc49a620ad47385663b
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DoorMat.003
+    second: {fileID: 2100000, guid: 10cba05fbb20c9a46a2b7b9c7ede4d96, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FloorMat.004
+    second: {fileID: 2100000, guid: e9c4f19ddf9362440b56f74ed714abc9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallLong2Mat.004
+    second: {fileID: 2100000, guid: 555979508a72ae34e90e9f212377d965, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallLong2Mat.005
+    second: {fileID: 2100000, guid: 55936f9a802073d419e38954bbfda788, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallShortDoorInteriorMat.004
+    second: {fileID: 2100000, guid: de553cea91ef3be409267034c1fbf8bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallShortDoorInteriorMat.005
+    second: {fileID: 2100000, guid: e66a0a82cc3ee404c8d35796d3d5eb93, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallShortDoubleWindowsMat.001
+    second: {fileID: 2100000, guid: 7cb33a2679a896a4bbd715b9460078b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallShortDoubleWindowsMat.005
+    second: {fileID: 2100000, guid: 8749d19a8468fb443ba826336e12cb18, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallShortDoubleWindowsMat.006
+    second: {fileID: 2100000, guid: 15de80ba77b03f545a4bdc6d0edf2eb0, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
