@@ -2,39 +2,23 @@ using UnityEngine;
 
 public class RotateMiniature : MonoBehaviour
 {
-    public float rotationSpeed = 90f; // Faster rotation for holding
-    private bool isRotatingLeft = false;
-    private bool isRotatingRight = false;
-
-    void Update()
+    public Transform miniatureObject;  // Assign this in the Inspector
+    [SerializeField] float rotationSpeed = 90f;
+    public void RotateLeft()
     {
-        if (isRotatingLeft)
+        Debug.Log("Rotating Left");
+        if (miniatureObject != null)
         {
-            transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime, Space.World);
-        }
-        if (isRotatingRight)
-        {
-            transform.Rotate(Vector3.up, -rotationSpeed * Time.deltaTime, Space.World);
+            miniatureObject.eulerAngles += new Vector3(0, rotationSpeed, 0); // Directly changing eulerAngles
         }
     }
 
-    public void StartRotatingLeft()
+    public void RotateRight()
     {
-        isRotatingLeft = true;
-    }
-
-    public void StopRotatingLeft()
-    {
-        isRotatingLeft = false;
-    }
-
-    public void StartRotatingRight()
-    {
-        isRotatingRight = true;
-    }
-
-    public void StopRotatingRight()
-    {
-        isRotatingRight = false;
+        Debug.Log("Rotating Right");
+        if (miniatureObject != null)
+        {
+            miniatureObject.eulerAngles += new Vector3(0, -rotationSpeed, 0);
+        }
     }
 }
