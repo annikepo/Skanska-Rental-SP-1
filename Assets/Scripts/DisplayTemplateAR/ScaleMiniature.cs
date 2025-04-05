@@ -15,6 +15,7 @@ public class ScaleMiniature : MonoBehaviour
         scaleSlider.onValueChanged.AddListener(ChangeScale);
     }
 
+    // set scale
     public void ChangeScale(float value)
     {
         if (miniature != null)

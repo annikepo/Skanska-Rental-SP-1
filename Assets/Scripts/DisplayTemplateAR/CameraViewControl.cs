@@ -9,6 +9,8 @@ public class CameraViewControl : MonoBehaviour
     public float minAngle = 10f;  // Minimum tilt angle (side view)
     private float currentAngle = 45f; // Default starting angle
 
+    // so continuous button hold works
+
     private bool isIncreasing = false;
     private bool isDecreasing = false;
 
