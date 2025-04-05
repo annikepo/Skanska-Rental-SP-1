@@ -2683,7 +2683,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ade95776aed29346bc902da178ce143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  miniatureObject: {fileID: 0}
   rotationSpeed: 45
 --- !u!1001 &484910292
 PrefabInstance:
@@ -6871,8 +6870,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ade95776aed29346bc902da178ce143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  miniatureObject: {fileID: 522566474}
-  rotationSpeed: 140
+  rotationSpeed: 80
 --- !u!4 &1176783010
 Transform:
   m_ObjectHideFlags: 0
